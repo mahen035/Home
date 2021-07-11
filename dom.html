@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>new page</title>
+	<script src="dom.js"></script>
+	<link rel ="stylesheet" href = "dom.css"/>
+	
+	</head>
+	</head>
+	<body onload="getName()">
+		<h1>JavaScript is fun!</h1>
+		<p id="para1">
+			Initially it seemed difficult but 
+			when I start lerning it, I am getting
+			better every day.
+		</p>
+		<form action="welcome.html" onsubmit="return verify()" method="post">
+			Regn. No: <input type ="text" id ="regn" name ="registration" value="101" readonly size = "3"/><br><br>
+			User Name:<input type ="text" id ="txt1" name ="first" size = "5"/> <span id ="uname" class="error"></span><br><br>
+			Password:<input type ="password" id ="pwd1" name ="password" size = "5"/><span id ="pwderr" class="error"></span><br><br>
+			Confirm Password:<input type ="password" id ="pwd2" name ="c_password" size = "5"/><br><br>
+			Address:<textarea id="add" name ="address" rows="3" cols="30">Address</textarea><br><br>
+			<label for="city">Choose City:</label>
+			<Select id="drpdwn" name="city" onchange="show()">
+				<option value = "seoul">Seoul</option>
+				<option value = "busan">Busan</option>
+				<option value = "incheon">Incheon</option>
+				<option value = "gwangu">Gwangu</option>
+			</select><br><br>
+			<div id = "coradd" class="hide">Correspondence Address:<textarea id="cadd" name ="caddress" rows="3" cols="30">Correspondence Address</textarea></div><br><br>
+			<input type = "radio" id="male" name = "gender" value="Male"/> <label for="male">Male</label> &nbsp;&nbsp;&nbsp;
+			<input type = "radio" id="female" name = "gender" value="Female"/> <label for="female">Female</label>
+			
+			&nbsp;&nbsp;&nbsp;<input type ="submit" id="sub" value ="Verify"/><br><br>
+			<input type ="button" id="test" value ="TEST" onclick="array_demo()"/><br><br>
+			<span id="msg1"></span> <br><br>
+			<span id="msg2"></span> <br><br>
+			<span id="obj1"></span> <br><br>
+			<span id="obj2"></span>
+			<span id ="hello"> </span>
+			
+		</form>
+	</body>
+</html>
+
